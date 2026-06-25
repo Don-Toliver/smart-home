@@ -72,8 +72,8 @@ button{
 
 <div class="card">
 <h2>🌀 Gas</h2>
-<button class="on" onclick="MotorOn()">ON</button>
-<button class="off" onclick="MotorOff()">OFF</button>
+<button class="on" onclick="GasOn()">ON</button>
+<button class="off" onclick="GasOff()">OFF</button>
 </div>
 
 
@@ -103,23 +103,23 @@ function fanOff(){
   fetch("https://api.thingspeak.com/update?api_key=CTYQT9JJAF76S2M4&field2=0");
   alert("Fan OFF");
 }
-function acOn(){
+function AcOn(){
   fetch("https://api.thingspeak.com/update?api_key=CTYQT9JJAF76S2M4&field3=0");
-  alert("Fan ON");
+  alert("Ac ON");
 }
 
-function acoff(){
+function Acoff(){
   fetch("https://api.thingspeak.com/update?api_key=CTYQT9JJAF76S2M4&field3=0");
-  alert("Fan OFF");
+  alert("Ac OFF");
 }
 function GasOn(){
   fetch("https://api.thingspeak.com/update?api_key=CTYQT9JJAF76S2M4&field4=0");
-  alert("Fan ON");
+  alert("Gas ON");
 }
 
 function Gasoff(){
   fetch("https://api.thingspeak.com/update?api_key=CTYQT9JJAF76S2M4&field4=0");
-  alert("Fan OFF");
+  alert("Gas OFF");
 }
 
 </script>
